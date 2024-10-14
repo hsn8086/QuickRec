@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "quickrec"
+version = "0.1.0"
+description = "OCR accounting"
+authors = ["hsn <hsn1919810@gmail.com>"]
+license = "AGPL-3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.10.0.84"
+cnocr = {extras = ["ort-cpu"], version = "^2.3.0.3"}
+pillow = "^10.4.0"
+pydantic = "^2.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
